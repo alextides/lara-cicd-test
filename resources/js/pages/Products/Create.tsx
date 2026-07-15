@@ -17,7 +17,7 @@ interface UploadResponse {
 
 export default function Create(): React.JSX.Element {
     // Add product input below:
-    const { data, setData, post, processing, errors } = useForm({
+    const { data, setData , processing, errors } = useForm({
         name: "",
         price: "",
         description: "",
@@ -35,9 +35,9 @@ export default function Create(): React.JSX.Element {
     const [isDragActive, setIsDragActive] = useState<boolean>(false);
     const [file, setFile] = useState<File | null>(null);
     const [status, setStatus] = useState<string>('');
-    const [name, setName] = useState('');
-    const [price, setPrice] = useState('');
-    const [description, setDescription] = useState('');
+    // const [name, setName] = useState('');
+    // const [price, setPrice] = useState('');
+    // const [description, setDescription] = useState('');
     
     // Explicitly type the input reference element
     const fileInputRef = useRef<HTMLInputElement | null>(null);
